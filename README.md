@@ -8,29 +8,29 @@ This Docker image is now deprecated. Read about it below.
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`python3.12`, `latest` _(Dockerfile)_](https://github.com/tiangolo/uwsgi-nginx-docker/blob/master/docker-images/python3.12.dockerfile)
-* [`python3.11`, _(Dockerfile)_](https://github.com/tiangolo/uwsgi-nginx-docker/blob/master/docker-images/python3.11.dockerfile)
-* [`python3.10`, _(Dockerfile)_](https://github.com/tiangolo/uwsgi-nginx-docker/blob/master/docker-images/python3.10.dockerfile)
+- [`python3.12`, `latest` _(Dockerfile)_](https://github.com/rdcrn/uwsgi-nginx-docker/blob/master/docker-images/python3.12.dockerfile)
+- [`python3.11`, _(Dockerfile)_](https://github.com/rdcrn/uwsgi-nginx-docker/blob/master/docker-images/python3.11.dockerfile)
+- [`python3.10`, _(Dockerfile)_](https://github.com/rdcrn/uwsgi-nginx-docker/blob/master/docker-images/python3.10.dockerfile)
 
 ## Deprecated tags
 
 🚨 These tags are no longer supported or maintained, they are removed from the GitHub repository, but the last versions pushed might still be available in Docker Hub if anyone has been pulling them:
 
-* `python3.9`
-* `python3.8`
-* `python3.8-alpine`
-* `python3.7`
-* `python3.6`
-* `python2.7`
+- `python3.9`
+- `python3.8`
+- `python3.8-alpine`
+- `python3.7`
+- `python3.6`
+- `python2.7`
 
 The last date tags for these versions are:
 
-* `python3.9-2025-11-09`
-* `python3.8-2024-10-28`
-* `python3.8-alpine-2024-03-11`
-* `python3.7-2024-10-28`
-* `python3.6-2022-11-25`
-* `python2.7-2022-11-25`
+- `python3.9-2025-11-09`
+- `python3.8-2024-10-28`
+- `python3.8-alpine-2024-03-11`
+- `python3.7-2024-10-28`
+- `python3.6-2022-11-25`
+- `python2.7-2022-11-25`
 
 ---
 
@@ -128,9 +128,9 @@ COPY ./app /app
 # Your Dockerfile code...
 ```
 
-* By default it will try to find a uWSGI config file in `/app/uwsgi.ini`.
+- By default it will try to find a uWSGI config file in `/app/uwsgi.ini`.
 
-* That `uwsgi.ini` file will make it try to run a Python file in `/app/main.py`.
+- That `uwsgi.ini` file will make it try to run a Python file in `/app/main.py`.
 
 If you are building a **Flask** web application you should use instead [**tiangolo/uwsgi-nginx-flask**](https://hub.docker.com/r/tiangolo/uwsgi-nginx-flask/).
 
@@ -327,11 +327,11 @@ The combination of uWSGI with Nginx is a [common way to deploy Python web applic
 
 Roughly:
 
-* **Nginx** is a web server, it takes care of the HTTP connections and also can serve static files directly and more efficiently.
+- **Nginx** is a web server, it takes care of the HTTP connections and also can serve static files directly and more efficiently.
 
-* **uWSGI** is an application server, that's what runs your Python code and it talks with Nginx.
+- **uWSGI** is an application server, that's what runs your Python code and it talks with Nginx.
 
-* **Your Python code** has the actual web application, and is run by uWSGI.
+- **Your Python code** has the actual web application, and is run by uWSGI.
 
 This image takes advantage of already slim and optimized existing Docker images (based on Debian as [recommended by Docker](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)) and implements Docker best practices.
 

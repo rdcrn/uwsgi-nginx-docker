@@ -1,6 +1,6 @@
 FROM python:3.12-trixie
 
-LABEL maintainer="Sebastian Ramirez <tiangolo@gmail.com>"
+LABEL org.opencontainers.image.source=https://github.com/rdcrn/uwsgi-nginx-docker
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1

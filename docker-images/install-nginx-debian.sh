@@ -6,8 +6,8 @@
 
 
 # Standard set up Nginx
-export NGINX_VERSION=1.29.3
-export NJS_VERSION=0.9.4
+export NGINX_VERSION=1.31.10
+export NJS_VERSION=1.0.2
 export NJS_RELEASE=1~trixie
 export PKG_RELEASE=1~trixie
 export DYNPKG_RELEASE=1~trixie
